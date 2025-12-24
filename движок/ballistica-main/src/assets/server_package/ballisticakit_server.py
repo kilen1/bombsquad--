@@ -416,6 +416,22 @@ class ServerManagerApp:
                 time.time() + self.IMMEDIATE_SHUTDOWN_TIME_LIMIT
             )
 
+    def set_hostname(self, hostname: str) -> None:
+        """Change the server hostname (device name) without restarting.
+
+        This updates the custom_hostname in the config and will be used
+        for new connections. Note that this change will be temporary
+        unless you also update your config file.
+        """
+        old_hostname = self._config.custom_hostname
+        self._config.custom_hostname = hostname
+        print(
+            f'{Clr.CYN}Hostname changed from "{old_hostname}" to "{hostname}".{Clr.RST}',
+            flush=True,
+        )
+        # Note: The actual device name in the running subprocess won't change
+        # until restart, but future subprocess launches will use the new name.
+
     def _parse_command_line_args(self) -> None:
         """Parse command line args."""
         # pylint: disable=too-many-branches
@@ -729,7 +745,13 @@ class ServerManagerApp:
         # Set an environment var to change the device name. Device name
         # is used while making connection with master server,
         # cloud-console recognize us with this name.
-        os.environ['BA_DEVICE_NAME'] = self._config.party_name
+        # Use custom hostname if provided, otherwise use party name
+        device_name = (
+            self._config.custom_hostname
+            if self._config.custom_hostname is not None
+            else self._config.party_name
+        )
+        os.environ['BA_DEVICE_NAME'] = device_name
 
         print(f'{Clr.CYN}Launching server subprocess...{Clr.RST}', flush=True)
         binary_name = (
