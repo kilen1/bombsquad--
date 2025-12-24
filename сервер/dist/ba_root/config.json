@@ -1,0 +1,194 @@
+{
+ "Achievements": {
+  "Boom Goes the Dynamite": {
+   "Complete": false
+  },
+  "Boxer": {
+   "Complete": false
+  },
+  "Dual Wielding": {
+   "Complete": false
+  },
+  "Flawless Victory": {
+   "Complete": false
+  },
+  "Free Loader": {
+   "Complete": false
+  },
+  "Gold Miner": {
+   "Complete": false
+  },
+  "Got the Moves": {
+   "Complete": false
+  },
+  "In Control": {
+   "Complete": false
+  },
+  "Last Stand God": {
+   "Complete": false
+  },
+  "Last Stand Master": {
+   "Complete": false
+  },
+  "Last Stand Wizard": {
+   "Complete": false
+  },
+  "Mine Games": {
+   "Complete": false
+  },
+  "Off You Go Then": {
+   "Complete": false
+  },
+  "Onslaught God": {
+   "Complete": false
+  },
+  "Onslaught Master": {
+   "Complete": false
+  },
+  "Onslaught Training Victory": {
+   "Complete": false
+  },
+  "Onslaught Wizard": {
+   "Complete": false
+  },
+  "Precision Bombing": {
+   "Complete": false
+  },
+  "Pro Boxer": {
+   "Complete": false
+  },
+  "Pro Football Shutout": {
+   "Complete": false
+  },
+  "Pro Football Victory": {
+   "Complete": false
+  },
+  "Pro Onslaught Victory": {
+   "Complete": false
+  },
+  "Pro Runaround Victory": {
+   "Complete": false
+  },
+  "Rookie Football Shutout": {
+   "Complete": false
+  },
+  "Rookie Football Victory": {
+   "Complete": false
+  },
+  "Rookie Onslaught Victory": {
+   "Complete": false
+  },
+  "Runaround God": {
+   "Complete": false
+  },
+  "Runaround Master": {
+   "Complete": false
+  },
+  "Runaround Wizard": {
+   "Complete": false
+  },
+  "Sharing is Caring": {
+   "Complete": false
+  },
+  "Stayin' Alive": {
+   "Complete": false
+  },
+  "Super Mega Punch": {
+   "Complete": false
+  },
+  "Super Punch": {
+   "Complete": false
+  },
+  "TNT Terror": {
+   "Complete": false
+  },
+  "Team Player": {
+   "Complete": false
+  },
+  "The Great Wall": {
+   "Complete": false
+  },
+  "The Wall": {
+   "Complete": false
+  },
+  "Uber Football Shutout": {
+   "Complete": false
+  },
+  "Uber Football Victory": {
+   "Complete": false
+  },
+  "Uber Onslaught Victory": {
+   "Complete": false
+  },
+  "Uber Runaround Victory": {
+   "Complete": false
+  }
+ },
+ "Auto Account State": "Server",
+ "Auto Balance Teams": true,
+ "Campaigns": {},
+ "CloudVals": {
+  "gct": [
+   "asyncio.trsock.TransportSocket",
+   "asyncio.selector_events._SelectorSocketTransport",
+   "TimeoutError"
+  ]
+ },
+ "Default Player Profiles": {
+  "Client Input Device #1": "__account__"
+ },
+ "FFA Series Length": 24,
+ "Fleet Zone Ping Last Flush Time": 1766430307,
+ "Fleet Zone Pings": {
+  "prod": {
+   "frankfurt.v4": 51.02655906640875,
+   "hamburg.v4": 48.21488739230105,
+   "helsinki.v4": 32.89435701030652,
+   "stockholm.v4": 32.071235517611846,
+   "warsaw.v4": 50.838374464886904
+  }
+ },
+ "Free-for-All Playlist Randomize": true,
+ "Free-for-All Playlist Selection": "\u041c\u043e\u0439 \u043f\u043b\u0435\u0439-\u043b\u0438\u0441\u0442 \u041a\u0430\u0436\u0434\u044b\u0439 \u0441\u0430\u043c \u0437\u0430 \u0441\u0435\u0431\u044f",
+ "Free-for-All Playlists": {
+  "\u041c\u043e\u0439 \u043f\u043b\u0435\u0439-\u043b\u0438\u0441\u0442 \u041a\u0430\u0436\u0434\u044b\u0439 \u0441\u0430\u043c \u0437\u0430 \u0441\u0435\u0431\u044f": [
+   {
+    "settings": {
+     "Allow Negative Scores": true,
+     "Epic Mode": true,
+     "Kills to Win Per Player": 20,
+     "Respawn Times": 0.5,
+     "Time Limit": 0,
+     "map": "Courtyard"
+    },
+    "type": "bascenev1lib.game.deathmatch.DeathMatchGame"
+   }
+  ]
+ },
+ "Idle Exit Minutes": null,
+ "Local Account Name": "Server24009054",
+ "Player Profiles": {
+  "__account__": {
+   "character": "Spaz",
+   "color": [
+    0.5,
+    0.25,
+    1.0
+   ],
+   "highlight": [
+    0.5,
+    0.25,
+    1.0
+   ]
+  }
+ },
+ "Plugins": {},
+ "Port": 43213,
+ "Show Tutorial": false,
+ "Signed In Last Session": false,
+ "Team Tournament Playlists": {},
+ "Teams Series Length": 7,
+ "launchCount": 28,
+ "lc14173": 1,
+ "lc14292": 1
+}
