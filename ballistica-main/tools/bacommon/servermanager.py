@@ -20,6 +20,9 @@ class ServerConfig:
 
     # Name of our server in the public parties list.
     party_name: str = 'FFA'
+    
+    # Custom hostname for the server
+    hostname: str = 'server'
 
     # If True, your party will show up in the global public party list
     # Otherwise it will still be joinable via LAN or connecting by IP

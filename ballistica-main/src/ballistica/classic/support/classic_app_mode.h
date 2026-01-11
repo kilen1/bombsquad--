@@ -145,6 +145,9 @@ class ClassicAppMode : public base::AppMode {
     return public_party_stats_url_;
   }
 
+  void set_server_hostname(const std::string& name) { server_hostname_ = name; }
+  auto server_hostname() const -> const std::string& { return server_hostname_; }
+
   void SetPublicPartyMaxSize(int count);
   void SetPublicPartyName(const std::string& name);
   void SetPublicPartyStatsURL(const std::string& name);
@@ -356,6 +359,7 @@ class ClassicAppMode : public base::AppMode {
   std::string public_party_name_;
   std::string public_party_min_league_;
   std::string public_party_stats_url_;
+  std::string server_hostname_{"server"};
   std::string root_ui_league_type_;
   std::string root_ui_achievement_percent_text_;
   std::string root_ui_level_text_;

@@ -435,6 +435,10 @@ class ServerController:
         bascenev1.set_public_party_queue_enabled(self._config.enable_queue)
         bascenev1.set_public_party_name(self._config.party_name)
         bascenev1.set_public_party_stats_url(self._config.stats_url)
+        
+        # Store the hostname in a global variable for later use
+        import babase
+        babase.app.server_hostname = self._config.hostname
         bascenev1.set_public_party_public_address_ipv4(
             self._config.public_ipv4_address
         )

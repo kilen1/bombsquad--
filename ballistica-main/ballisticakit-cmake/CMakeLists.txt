@@ -615,6 +615,10 @@ set(BALLISTICA_SOURCES
   ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_networking.h
   ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_scene.cc
   ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_scene.h
+  ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_server_hostname.cc
+  ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_server_hostname.h
+  ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_server_extensions.cc
+  ${BA_SRC_ROOT}/ballistica/scene_v1/python/methods/python_methods_server_extensions.h
   ${BA_SRC_ROOT}/ballistica/scene_v1/python/scene_v1_python.cc
   ${BA_SRC_ROOT}/ballistica/scene_v1/python/scene_v1_python.h
   ${BA_SRC_ROOT}/ballistica/scene_v1/scene_v1.cc
