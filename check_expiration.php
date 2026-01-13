@@ -1,7 +1,7 @@
 <?php
 // check_expiration.php - ручная проверка истечения сроков
 session_start();
-require_once __DIR__ . '../../Base/db.php';
+require_once __DIR__ . './db.php';
 
 header('Content-Type: application/json');
 

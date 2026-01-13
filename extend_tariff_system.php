@@ -1,6 +1,6 @@
 <?php
 // extend_tariff_system.php - скрипт для расширения системы тарифов
-include __DIR__ . '../../Base/db.php';
+include __DIR__ . './db.php';
 
 function extendTariffSystem($pdo) {
     $updates = [];
