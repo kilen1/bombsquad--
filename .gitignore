@@ -1,0 +1,57 @@
+```gitignore
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Distribution / packaging
+dist/
+build/
+*.tar.gz
+*.zip
+
+# PHP specific
+*.php~
+.php_cs.cache
+.sass-cache/
+
+# Coverage reports
+coverage/
+*.gcov
+*.lcov
+*.profdata
+
+# Testing
+.phpunit.result.cache
+test-results/
+
+# Composer/Packagist
+composer.lock
+/vendor/
+!.gitignore
+```
