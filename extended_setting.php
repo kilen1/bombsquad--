@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include __DIR__ . '../../Base/db.php';
+include __DIR__ . './db.php';
 
 if (!isset($_SESSION['username'])) {
     header("Location: /MasterBilling/Autorize");

@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '../../Base/db.php';
+include __DIR__ . './db.php';
 
 echo "=== Структура таблицы tariffs ===\n";
 try {

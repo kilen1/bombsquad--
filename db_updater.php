@@ -1,6 +1,6 @@
 <?php
 // db_updater.php - скрипт для обновления базы данных
-include __DIR__ . '../../Base/db.php';
+include __DIR__ . '/db.php';
 
 function updateDatabase($pdo) {
     $updates = [];
@@ -38,7 +38,14 @@ function updateDatabase($pdo) {
             $updates[] = "Создана таблица server_action_log";
         }
         
-        // 4. Обновляем существующие Standard тарифы
+        // 4. Проверяем наличие колонки user_folder
+        $check = $pdo->query("SHOW COLUMNS FROM services LIKE 'user_folder'");
+        if ($check->rowCount() == 0) {
+            $pdo->exec("ALTER TABLE services ADD COLUMN user_folder VARCHAR(500) DEFAULT NULL");
+            $updates[] = "Добавлена колонка user_folder";
+        }
+        
+        // 5. Обновляем существующие Standard тарифы
         $pdo->exec("
             UPDATE services s
             JOIN tariffs t ON s.tariff_id = t.id

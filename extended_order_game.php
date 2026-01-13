@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Исправляем путь к базе данных
-require_once __DIR__ . '../../Base/db.php';
+require_once __DIR__ . './db.php';
 
 if (!isset($_SESSION['username'])) {
     die(json_encode(['success' => false, 'message' => 'Не авторизован']));

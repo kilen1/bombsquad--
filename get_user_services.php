@@ -1,7 +1,7 @@
 <?php
 // get_user_services.php
 session_start();
-include __DIR__ . '../../Base/db.php';
+include __DIR__ . './db.php';
 
 header('Content-Type: application/json');
 
