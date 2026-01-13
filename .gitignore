@@ -1,1 +1,23 @@
-Nothing should be ignored based on the provided file changes, as they consist only of PHP source files and no build artifacts, dependencies, or temporary files.
+```
+# SQL build artifacts and temporary files
+*.sql.bak
+*.sql.tmp
+*.sql~
+
+# Database-related temporary files
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+```
+
+Wait, let me reconsider. The added files are all `.sql` files which appear to be source code/database schema files, not build artifacts. No compiled files, dependencies, or temporary files are present in the change list.
+
+(empty)
